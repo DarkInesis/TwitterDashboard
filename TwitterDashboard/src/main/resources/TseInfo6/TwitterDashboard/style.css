@@ -1,0 +1,96 @@
+BorderPane{
+  -fx-background-color:#15202b;
+}
+
+Button{
+  -fx-background-color:none;
+  -fx-border-radius: 45%;
+  -fx-border-color:#32a0cf;
+  -fx-text-fill:white;
+}
+Button:hover{
+  -fx-text-fill:#32a0cf;
+  -fx-cursor: hand;
+}
+#connectButton{
+    -fx-cursor: hand;
+}
+TextField{
+  -fx-background-color:none;
+  -fx-text-fill:white;
+  -fx-border-color:#32a0cf;
+  -fx-border-radius:10%;
+  -fx-font-family: verdana;
+}
+GridPane Line{
+  -fx-stroke:#253341;
+}
+Label,LabelUserClickable{
+  -fx-text-fill:white;
+  -fx-font-family: verdana;
+}
+#hashtagName{
+  -fx-text-fill:#32a0cf;
+  -fx-font-weight:bold;
+}
+#nbfavorite,#nbFavorite{
+  -fx-text-fill:red;
+}
+#nbRT,#nbrt{
+  -fx-text-fill:lightgreen;
+}
+#screenNameDisplayUser,#period,#periodLegend{
+  -fx-text-fill:grey;
+}
+#createdAt{
+  -fx-text-fill:grey;
+}
+#imageCircle{
+  -fx-stroke:#15202b;
+}
+#followersLabel,#followingLabel{
+  -fx-text-fill:#32a0cf;
+}
+#screenName{
+  -fx-text-fill:#32a0cf;
+  -fx-font-size: 25px;
+  -fx-font-weight: bold;
+}
+
+#gridPaneUsers,#gridPaneHashtags{
+  -fx-background-color:#15202b;
+}
+#favoriteUsersLabel,#favoriteHashtagsLabel{
+  -fx-text-fill:#32a0cf;
+}
+#scrollPaneHashtags,#scrollPaneUsers{
+  -fx-background-color: none;
+}
+AnchorPane{
+  -fx-background-color: #15202b;
+}
+#pointInteretLabel,#nameCategory{
+  -fx-text-fill:#32a0cf;
+}
+.scroll-pane{
+  -fx-background-color:transparent;
+}
+.scroll-pane .viewport{
+  -fx-background-color:transparent;
+}
+#classementArray HBox{
+  -fx-alignment:CENTER-LEFT;
+  -fx-translate-x:10;
+}
+#classementArray HBox LabelUserClickable{
+  -fx-translate-x:10;
+}
+
+.chart-legend-item{
+    -fx-text-fill: black;
+}
+
+#statsLabel {
+	-fx-font-size: 30;
+	-fx-text-fill:#32a0cf;
+}

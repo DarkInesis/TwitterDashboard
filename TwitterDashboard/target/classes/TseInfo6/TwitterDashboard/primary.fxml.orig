@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<<<<<<< HEAD
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+=======
+>>>>>>> Refactoring primary DisplayHashtag DisplayUser pour un meilleur rendu visuel
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<<<<<<< HEAD
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="625.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TseInfo6.TwitterDashboard.PrimaryController">
+   <top>
+      <ToolBar fx:id="signIn" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" style="-fx-translate-x: 0;" BorderPane.alignment="CENTER">
+         <items>
+            <Button fx:id="searchButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#search" text="Search" />
+            <TextField fx:id="inputText" alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" promptText="\@user or #hashtag" />
+            <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="6.0" />
+            <Button fx:id="compareButton" mnemonicParsing="false" text="Compare" />
+            <ImageView fx:id="connectButton" fitWidth="150.0" onMouseClicked="#connect" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/connect-with-twitter.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="screenName" alignment="CENTER_RIGHT" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" snapToPixel="false" text="ScreenName" textFill="#33a1cf" visible="false">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+   </top>
+=======
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TseInfo6.TwitterDashboard.PrimaryController">
+>>>>>>> Refactoring primary DisplayHashtag DisplayUser pour un meilleur rendu visuel
+   <center>
+      <GridPane fx:id="grid" alignment="TOP_CENTER" gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="Infinity" minHeight="-Infinity" percentHeight="90.0" vgrow="ALWAYS" />
+         </rowConstraints>
+      </GridPane>
+   </center>
+   <top>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="-Infinity" />
+          <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1">
+               <children>
+                  <Button fx:id="compareButton" contentDisplay="CENTER" mnemonicParsing="false" text="Compare">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField fx:id="inputText" alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" onAction="#search" promptText="\@user or #hashtag">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="searchButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#search" text="Search">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT">
+               <children>
+                  <ImageView fx:id="connectButton" fitWidth="150.0" onMouseClicked="#connect" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/connect-with-twitter.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+   </top>
+</BorderPane>
