@@ -40,17 +40,17 @@ public final class TwitterRequestManager extends Observable{
 	private static String BEARER_TOKEN;
 	private static Gson gson;
 	// Probablement à cacher
-	private static String consumerKey="7blOefOxtEsTG7DjNxEF8qbzR";
+	private static String consumerKey="XXX";
 	private static String callbacklURL="https://127.0.0.1";
 	private static String oauth_version="1.0";
 	private static String oauth_nonce;
 	private static String oauth_signature;
 	private static String oauth_signature_methode="HMAC-SHA1";
 	private static String oauth_timestamp;
-	private static String consumerKey_secret="fJDqgMEfTGja2Vt9GM8004OS6s472qInel01ngGtp6Y8Jiem3Y";
-	private static String token_secret="WWz1EQ7Ryln135pjLWblOcNyJRsG9eMV9srid5xqNnr7x";
+	private static String consumerKey_secret="XXX";
+	private static String token_secret="XXX";
 	private static String signing_key;
-	private static String access_token="1188826087234723841-BTJGliWtCun1Idq9YSTLSZn9nONJ5r";
+	private static String access_token="XXX";
 	// Variables remplies lors de l'identification
 	private static String oauth_token;
 	private static String oauth_token_secret;
